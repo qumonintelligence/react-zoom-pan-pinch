@@ -20,7 +20,7 @@
     "build:docs": "build-storybook",
     "start": "start-storybook -p 6006 --no-manager-cache",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
-    "prepare": "install-peers && yarn build",
+    "preparebuild": "install-peers && yarn build",
     "predeploy": "yarn run build:docs",
     "deploy": "gh-pages -d storybook-static",
     "test:lint": "eslint src/ --ext .js,.jsx,.tsx,.ts",
